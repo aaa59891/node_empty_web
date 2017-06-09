@@ -1,0 +1,44 @@
+{
+  "log4js":{
+    "appenders": [
+      {
+        "type": "logLevelFilter",
+        "level": "OFF",
+        "appender":{
+          "type": "console",
+          "layout": {
+            "type": "pattern",
+            "pattern": "%d{yyyy-MM-dd} %r [%[%5.5p%]] - %c - %m [%z]"
+          }
+        }
+      }
+    ]
+  },
+
+  "IPList":[
+    "127.0.0.1",
+    "192.168.80.10",
+    "192.168.80.11"
+  ],
+
+  "nodeRed": {
+    "port": 1880,
+    "getStatusUri": "/runtime/status",
+    "deployUri": "/flows",
+    "headers": {
+      "Node-RED-Deployment-Type": "full"
+    }
+  },
+
+  "cloud":{
+    "DNS": "http://127.0.0.1:1880",
+    "deployResultUri": "/",
+    "retryTimes": 5,
+    "delayMilliseconds": 5000
+  },
+
+  "nrTestData": {
+    "name": "test",
+    "desc": "test deploying"
+  }
+}
