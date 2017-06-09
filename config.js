@@ -19,7 +19,6 @@ try{
   if(current){
     Object.assign(config, require(`./conf/${current}/config.json`));
   }
-  console.log(JSON.stringify(config,undefined,2));
 }catch(e){
   console.log(e);
 }
