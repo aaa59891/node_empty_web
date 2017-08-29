@@ -5,7 +5,7 @@
         "type": "logLevelFilter",
         "level": "INFO",
         "appender":{
-          "type": "DateFile",
+          "type": "dateFile",
           "filename": "./log/log",
           "pattern": "-yyyy-MM-dd.log",
           "alwaysIncludePattern": true,
